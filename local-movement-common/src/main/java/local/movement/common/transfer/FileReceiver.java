@@ -1,10 +1,10 @@
-package vlad8947.local.movement.common.transfer;
+package local.movement.common.transfer;
 
-import vlad8947.local.movement.common.AppProperties;
-import vlad8947.local.movement.common.model.MovementProperties;
-import vlad8947.local.movement.common.model.MovementStatus;
-import vlad8947.local.movement.common.view.DialogInterface;
-import vlad8947.local.movement.common.view.MovementPropListAdapter;
+import local.movement.common.AppProperties;
+import local.movement.common.view.DialogInterface;
+import local.movement.common.model.MovementProperties;
+import local.movement.common.model.MovementStatus;
+import local.movement.common.view.MovementPropListAdapter;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -16,8 +16,7 @@ import java.nio.channels.FileChannel;
 import java.nio.channels.SocketChannel;
 import java.nio.file.StandardOpenOption;
 
-import static vlad8947.local.movement.common.transfer.ChannelTransfer.*;
-import static vlad8947.local.movement.common.AppProperties.Localisation.messages;
+import static local.movement.common.transfer.ChannelTransfer.*;
 
 public class FileReceiver implements Runnable, Closeable {
 
@@ -49,10 +48,10 @@ public class FileReceiver implements Runnable, Closeable {
         try {
             File file = new File(directory, movementProperties.getFileProperties().getFileName());
             logger.info("Create receive file");
-            String title = messages.getString("dialog.get_file_name.title");
-            String headerBeforeFileName = messages.getString("dialog.get_file_name.header.before_file_name");
-            String headerAfterFileName = messages.getString("dialog.get_file_name.header.after_file_name");
-            String content = messages.getString("dialog.get_file_name.content");
+            String title = AppProperties.Localisation.messages.getString("dialog.get_file_name.title");
+            String headerBeforeFileName = AppProperties.Localisation.messages.getString("dialog.get_file_name.header.before_file_name");
+            String headerAfterFileName = AppProperties.Localisation.messages.getString("dialog.get_file_name.header.after_file_name");
+            String content = AppProperties.Localisation.messages.getString("dialog.get_file_name.content");
             while (!file.createNewFile()) {
                 String fileName = dialog.textInput(file.getName(),
                         title, headerAfterFileName + file.getName() + headerBeforeFileName, content);

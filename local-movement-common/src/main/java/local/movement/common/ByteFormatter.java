@@ -1,4 +1,4 @@
-package vlad8947.local.movement.common;
+package local.movement.common;
 
 public class ByteFormatter {
 

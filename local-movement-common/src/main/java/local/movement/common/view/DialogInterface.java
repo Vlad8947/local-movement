@@ -1,4 +1,4 @@
-package vlad8947.local.movement.common.view;
+package local.movement.common.view;
 
 public interface DialogInterface {
 

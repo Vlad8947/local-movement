@@ -1,6 +1,6 @@
-package vlad8947.local.movement.common.view;
+package local.movement.common.view;
 
-import vlad8947.local.movement.common.model.MovementProperties;
+import local.movement.common.model.MovementProperties;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 

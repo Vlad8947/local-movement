@@ -1,11 +1,11 @@
-package vlad8947.local.movement.common.transfer;
+package local.movement.common.transfer;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import vlad8947.local.movement.common.AppProperties;
-import vlad8947.local.movement.common.model.FileProperties;
-import vlad8947.local.movement.common.model.MovementProperties;
-import vlad8947.local.movement.common.model.MovementType;
-import vlad8947.local.movement.common.view.MovementPropListAdapter;
+import local.movement.common.AppProperties;
+import local.movement.common.view.MovementPropListAdapter;
+import local.movement.common.model.FileProperties;
+import local.movement.common.model.MovementProperties;
+import local.movement.common.model.MovementType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -16,7 +16,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 
-import static vlad8947.local.movement.common.transfer.ChannelTransfer.*;
+import static local.movement.common.transfer.ChannelTransfer.*;
 
 public class ConnectionsReceiver implements Runnable, Closeable {
 

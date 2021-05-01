@@ -1,10 +1,10 @@
-package vlad8947.local.movement.common.model;
+package local.movement.common.model;
 
+import local.movement.common.AppProperties;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-import vlad8947.local.movement.common.AppProperties;
 
 import java.io.Closeable;
 import java.io.File;

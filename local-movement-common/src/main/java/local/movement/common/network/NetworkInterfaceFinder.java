@@ -1,4 +1,4 @@
-package vlad8947.local.movement.common.network;
+package local.movement.common.network;
 
 import java.net.Inet4Address;
 import java.net.InetAddress;

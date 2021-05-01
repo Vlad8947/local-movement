@@ -1,12 +1,12 @@
-package vlad8947.local.movement.common.transfer;
+package local.movement.common.transfer;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import vlad8947.local.movement.common.AppProperties;
-import vlad8947.local.movement.common.model.MovementProperties;
-import vlad8947.local.movement.common.model.MovementStatus;
-import vlad8947.local.movement.common.view.DialogInterface;
-import vlad8947.local.movement.common.view.MovementPropListAdapter;
+import local.movement.common.view.DialogInterface;
+import local.movement.common.AppProperties;
+import local.movement.common.model.MovementProperties;
+import local.movement.common.model.MovementStatus;
+import local.movement.common.view.MovementPropListAdapter;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -19,8 +19,8 @@ import java.nio.channels.SocketChannel;
 import java.nio.file.StandardOpenOption;
 import java.util.Arrays;
 
-import static vlad8947.local.movement.common.transfer.ChannelTransfer.*;
-import static vlad8947.local.movement.common.AppProperties.Localisation.messages;
+import static local.movement.common.transfer.ChannelTransfer.*;
+import static local.movement.common.AppProperties.Localisation.messages;
 
 public class FileSender implements Runnable, Closeable {
 

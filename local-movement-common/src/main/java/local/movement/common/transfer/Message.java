@@ -1,4 +1,4 @@
-package vlad8947.local.movement.common.transfer;
+package local.movement.common.transfer;
 
 public class Message {
 

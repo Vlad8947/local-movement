@@ -1,4 +1,4 @@
-package vlad8947.local.movement.common.transfer;
+package local.movement.common.transfer;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;

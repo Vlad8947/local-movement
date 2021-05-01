@@ -1,4 +1,4 @@
-package vlad8947.local.movement.common.network;
+package local.movement.common.network;
 
 public interface NetworkInterfaceAdder {
 

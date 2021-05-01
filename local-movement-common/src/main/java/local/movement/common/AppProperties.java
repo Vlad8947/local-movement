@@ -1,4 +1,4 @@
-package vlad8947.local.movement.common;
+package local.movement.common;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -22,6 +22,7 @@ public class AppProperties {
     @Setter
     private static int port = 22022;
 
+    //todo whaaat
     @Getter
     private static ExecutorService executorService =
             Executors.newCachedThreadPool(new ThreadFactory() {
